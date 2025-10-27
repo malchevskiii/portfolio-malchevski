@@ -6,9 +6,9 @@
 /*---GENERAL-----*/
 
 body {
-	background: linear-gradient(-20deg, #1c2220, #7b9292);
+	background: linear-gradient(-20deg, #1c2220, #5f7272);
 	background-size: 400% 400%;
-	animation: gradient 50s ease infinite;
+	animation: gradient 40s ease infinite;
 	height: 100vh;
 }
 
