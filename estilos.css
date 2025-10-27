@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*---GENERAL-----*/
+
+body {
+	background: linear-gradient(-20deg, #1c2220, #7b9292);
+	background-size: 400% 400%;
+	animation: gradient 50s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+    font-family: 'Archivo';
+    color: #E3E3E1;
+    padding: 0;
+    margin: 0;
+    /*background: #1c2220;*/
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4375rem 3rem;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu a {
+    padding: 0.2rem 1.2rem;
+    border-radius: 5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #DA308E;
+}
+
+.icono {
+    background-image: url(img/icono.svg);
+    display: flex;
+    width: 4.5625rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono:hover {
+    background-image: url(img/icono_rosa.svg);
+    transition: ease-in-out;
+}
+
+
+h1 {
+    font-family: Workbench;
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0.475rem;
+}
+
+h2 {
+    font-family: Archivo;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: "Archivo Narrow";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Archivo;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+/*-------NAV-------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 5.75rem;
+
+}
+
+nav a {
+    font-family: "Archivo Narrow";
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+/*------INTRO-----*/
+
+#titulo-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.375rem;
+    padding: 9rem 0;
+
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: 1.9rem;
+}
+
+.boton a {
+    font-family: "Archivo Narrow";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase;
+
+    border-radius: 5rem;
+    padding: 0.6875rem 2rem;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.boton a:hover {
+    background-color: #DA308E;
+    color: #E3E3E1;
+}
+
+
+/*----PORTFOLIO----*/
+
+#galeria {
+    display: flex;
+    padding: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*-----SOBRE-MI------*/
+
+#sobre-mi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.1875rem;
+    padding: 1rem;
+}
+
+#texto-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 27rem;
+}
+
+#sobre-mi p {
+    display: flex;
+    width: 25.5rem;
+    height: 8.1875rem;
+}
+
+#datos {
+    display: grid;
+    width: 35.5625rem;
+    height: 11.625rem;
+    padding: 0 0.625rem;
+    row-gap: 3.9375rem;
+    column-gap: 63px;
+}
+
+#datos li {
+    font-weight: 400;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#datos span {
+    line-break: after-white-space;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9375rem;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.875rem;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.columna1 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.875rem;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#experiencia {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap: 2.5rem;
+}
+
+#experiencia li {
+    font-weight: 400;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#experiencia span {
+    line-break: after-white-space;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9375rem;
+}
+
+#exp {
+    display: flex;
+    align-items: center;
+    gap: 2.1875rem;
+}
+
+.columnas-exp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 11rem;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    list-style-type: none;
+}
+
+.columna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.875rem;
+}
+
+#exp li {
+    font-weight: 400;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#exp span {
+    line-break: after-white-space;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9375rem;
+}
+
+#educacion {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap: 3.5rem;
+}
+
+#educacion li {
+    font-weight: 400;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#educacion span {
+    line-break: after-white-space;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9375rem;
+}
+
+#edu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.columnas-edu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 13.3rem;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    list-style-type: none;
+}
+
+.columna3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.875rem;
+}
+
+#edu li {
+    font-weight: 400;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#edu span {
+    line-break: after-white-space;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.9375rem;
+}
+
+/*------CONTACTO-----*/
+
+#contacto {
+    padding: 0.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+#contacto h2 {
+    font-family: Archivo;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #E3E3E1;
+}
+
+#form-contacto {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    font-family: "Archivo Narrow";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    letter-spacing: 0.055rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    font-family: Archivo;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 0.75rem 1rem;
+    background: rgba(217, 217, 217, 1);
+    border: none;
+    color: #0f0f0f;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: 2px solid #DA308E;
+}
+
+.boton-enviar {
+    align-self: flex-start;
+    font-family: "Archivo Narrow";
+    font-size: 1.625rem;
+    font-weight: 600;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase;
+    padding: 0.6875rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #DA308E;
+    border-color: #DA308E;
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    height: 5.3125rem;
+    padding: 1.4375rem 2.7rem 0rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 2.1875rem;
+}
