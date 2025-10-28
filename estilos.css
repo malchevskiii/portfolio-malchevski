@@ -198,6 +198,16 @@ nav a {
 	transition: all 400ms;
 }
 
+.container a.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--img) center center / cover no-repeat;
+    transition: all 400ms;
+    text-decoration: none;
+    color: inherit;
+}
+
 .container:hover .box {
 	filter: grayscale(100%) opacity(24%);
 }
