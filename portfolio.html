@@ -12,7 +12,9 @@
 <body>
 
     <header>
-        <a href="index.html"><div class="icono"></div></a>
+        <a href="index.html">
+            <div class="icono"></div>
+        </a>
         <nav class="menu">
             <a href="portfolio.html">Portfolio</a>
             <a href="sobre_mi.html">Sobre Mi</a>
@@ -21,13 +23,24 @@
     </header>
 
     <main>
+        <!-----
         <section id="galeria">
             <a href="bjork.html"><img src="img/portfolio/1.jpg" alt="galeria1" height=492px width=213px /></a>
             <img src="img/portfolio/2.jpg" alt="galeria2" width="213px" height="492px" />
             <img src="img/portfolio/3.jpg" alt="galeria3" width="213px" height="492px" />
             <img src="img/portfolio/4.jpg" alt="galeria4" width="213px" height="492px" />
             <img src="img/portfolio/5.jpg" alt="galeria5" width="213px" height="492px" />
+        </section>
+        ----PRUEBA GALERIA1-->
 
+        <section id="galeria">
+            <div class="container">
+                <div class="box box-1" style="--img: url(img/portfolio/1.jpg);" data-text="Bjork"></div>
+                <div class="box box-2" style="--img: url(img/portfolio/2.jpg);" data-text="Calendario 2025"></div>
+                <div class="box box-3" style="--img: url(img/portfolio/3.jpg);" data-text="Slow Brewing"></div>
+                <div class="box box-4" style="--img: url(img/portfolio/4.jpg);" data-text="CW Seguros"></div>
+                <div class="box box-5" style="--img: url(img/portfolio/5.jpg);" data-text="Bizarre Festival"></div>
+            </div>
         </section>
 
     </main>
