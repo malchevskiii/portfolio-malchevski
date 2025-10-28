@@ -103,7 +103,7 @@ header {
         padding: 0.4rem 1rem;
     }
 
-
+/*----Texto----*/
     h1 {
         font-size: 3rem;
     }
@@ -152,7 +152,6 @@ header {
         bottom: 0.5rem;
     }
 
-    /* anula los efectos de hover del grid del desktop */
     .container:has(.box:hover),
     .container:hover {
         grid-template-columns: none !important;
