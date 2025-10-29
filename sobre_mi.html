@@ -27,13 +27,13 @@
     <main>
         <section id="sobre-mi">
             <img src="img/sobre_mi/sobre_mi.jpg" alt="sobre_mi_foto" width="" height="" />
-            <div id="texto-sobre-mi">
+            <div id="texto-sobre-mi"> <!-- si esto es un texto largo no hay otra etiqueta semántica que funcione mejor que div? -->
             <p>Diseñadora gráfica con formación en comunicación visual y un interés especial en lo editorial y
                 experimental.
                 Me apasiona trabajar con tipografía, estructura y elementos analógicos.</p>
-            <div id="datos">
+            <div id="datos"> <!-- este div tiene un solo elemento, una ul, que ya sirve de contenedor para los elementos internos, entonces, es necesaria su existencia♠ -->
                 <ul class="columnas">
-                    <section id="columna1">
+                    <section id="columna1"> <!-- adentro de una ul solo pueden ir li, pero adentro de los li pueden haber otros elementos. Ahora, si hay tres section, no tiene sentido la existencia de la ul, o tal vez tendría sentido tres ul, y ahí sí el div de datos tendría sentido. Repensar toda esta estructura. Por otro lado, no pueden haber sections dentro de otra section -->
                         <li><span>Nacimiento </span>18/06/2001</li>
                         <li><span>Signo </span>Geminis :P</li>
                     </section>
@@ -52,9 +52,9 @@
 
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <div class="exp">
+            <div class="exp"> 
                 <ul class="columnas-exp">
-                    <section class="columna2">
+                    <section class="columna2"> <!-- mismas correcciones que la sección anterior. Además, podrías evitar el uso de columnas con flex-wrap y, así, cuando las pantallas sean más pequeñas, van a pasar a ser una sola columna sin necesidad de hacer toda esta columna -->
                         <li><span>Mambo Clothing </span>Diseñadora gráfica<span>2021-2023</span></li>
                         <li><span>CW Asesoras de Seguros </span>Diseñadora gráfica y Community Manager<span>2021-2023</span></li>
                     </section>
