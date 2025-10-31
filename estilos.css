@@ -16,7 +16,6 @@ body {
     align-content: center;
     align-items: center;
     max-height: 100vh;
-    box-sizing: border-box;
 }
 
 @keyframes gradient {
@@ -404,7 +403,6 @@ nav a {
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 20px;
-    letter-spacing: 1px;
     text-transform: uppercase;
     padding: 5px 20px;
     border-radius: 50px;
@@ -497,7 +495,7 @@ footer ul {
     }
 
     .box::after {
-        bottom: 16PX;
+        bottom: 16px;
         font-size: 0.9rem;
         padding: 6px 12px;
         opacity: 1;
@@ -527,6 +525,52 @@ footer ul {
         padding: 6px 12px;
         opacity: 1;
         transform: none;
+    }
+
+    /*----------@SOBRE MI----------*/
+    #sobre-mi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #texto-sobre-mi {
+        text-align: left;
+        width: 37%;
+    }
+
+    /*----------@DATOS----------*/
+    #experiencia h2{
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .columnas {
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+        align-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .columnas li:last-child {
+        grid-column: span 2;
+    }
+
+    /*----------@EXPERIENCIA----------*/
+    .columnas-exp {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .columnas-exp li {
+        width: 100%;
+        text-align: left;
     }
 
     /*----------@FOOTER----------*/
